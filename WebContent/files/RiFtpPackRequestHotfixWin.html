@@ -1,0 +1,391 @@
+<HTML>
+<head>
+</head>
+<script>
+	
+	if(typeof String.prototype.trim !== 'function') {
+  String.prototype.trim = function() {
+    return this.replace(/^\s+|\s+$/g, ''); 
+  }
+}
+
+function add_DDC() {
+    var newtext = 'Replace ddc tables(';
+   	var co0 =document.Form.ddc_CO0;
+   	var co1 =document.Form.ddc_CO1;
+   	var cat =document.Form.ddc_CAT;
+   	var cat =document.Form.ddc_CAT;
+   	if(co0.checked!=1 && co1.checked!=1 && cat.checked!=1){
+   		alert("you must select at least one split.");
+   	else if(co0.checked!=1 && co1.checked!=1 && cat.checked!=1){
+   		alert("you must select DBID.");
+   	}else{
+	    if(co0.checked==1){
+		    	newtext +='CO0,';
+	 	 	}
+   		if(co1.checked==1){
+	   		 newtext +='CO1,';
+	  	}
+    	if(cat.checked==1){
+	    	newtext +='CAT';
+	  	}
+    	newtext +=')from(';
+    	
+    	
+	 		document.Form.contents.value += newtext+"\n";
+		}
+}
+
+function add_MIG() {
+    var newtext = 'Run manual mig(';
+   	var reRunnable =document.Form.reRunnable;
+   	var migName = document.getElementsByName('migName')[0].value  
+
+   	if(migName.trim()==""){
+   		alert("you must write mig name.");
+   	}else{
+	    newtext +='name='+migName;
+ 	   	if(reRunnable.checked==1){
+	    	newtext +=',reRunnable=true';
+	  	}else{
+	  	 	newtext +=',reRunnable=false';
+	  	}
+    	newtext +=')';
+		  document.Form.contents.value += newtext+"\n";
+		}
+}
+
+function add_SQL() {
+    var newtext = 'Run SQL file(';
+   	var sqlFile = document.getElementsByName('sql')[0].value  
+   	if(sqlFile.trim()==""){
+   		alert("you must select SQL file.");
+   	}else{
+	    newtext +='name='+sqlFile;
+ 	   	newtext +=')';
+		 	document.Form.contents.value += newtext+"\n";
+		}
+}
+
+function add_JAR() {
+    var newtext = 'Replace JAR file(';
+ 		var jarFile = document.getElementsByName('jar')[0].value  
+   	if(jarFile.trim()==""){
+   		alert("you must select JAR file.");
+   	}else{
+	    newtext +='name='+jarFile;
+  	  newtext +=')';
+			document.Form.contents.value += newtext+"\n";
+		}
+	}
+
+function clear_content(){
+	alert("you must select aaaa file.");
+   var contents = document.getElementsByName('contents')[0]; 
+   contents.value = '';
+   window.event.returnValue = false; 
+}
+</script>
+<body bgcolor="#ccccbb"">
+	
+	<font size=4 color="blue"><u>RI FTP-Pack hotfix request: (WIN)</u></font>
+	<br><br>
+	
+	<FORM METHOD=POST name="Form" ACTION="RiFtpPackRequestHotfixWin.jsp">
+	
+	<table bgcolor="#aaaacc" border="1" style="width:70%">
+		<tr>
+			<td>Version:</td>		
+			<td>Maintenance:</td>		
+			<td>Update:</td>	
+			<td>Hotfix:</td>		
+			<td>Done by:</td>		
+			<td>Action:</td>
+		</tr>
+		<tr>
+			<td><select name="riVersions">
+    				<option value="0606">0606</option>
+    				<option value="0603">0603</option>
+     			</select></td>	
+
+			<td><select name="riMaint" >
+    				<option value="00">00</option>
+    				<option value="01">01</option>
+    				<option value="02">02</option>
+    				<option value="03">03</option>
+    				<option value="04">04</option>
+    				<option value="05">05</option>
+    				<option value="06">06</option>
+    				<option value="07">07</option>
+    				<option value="08">08</option>
+    				<option value="09">09</option>
+    				<option value="10">10</option>
+    				<option value="11">11</option>
+    				<option value="12">12</option>
+    				<option value="13">13</option>
+    				<option value="14">14</option>
+    				<option value="15">15</option>
+    				<option value="16">16</option>
+    				<option value="17">17</option>
+    				<option value="18">18</option>
+    				<option value="19">19</option>
+    				<option value="20">20</option>
+     			</select></td>	
+
+			<td><select name="riUpdate" >
+    				<option value="00">00</option>
+    				<option value="01">01</option>
+    				<option value="02">02</option>
+    				<option value="03">03</option>
+    				<option value="04">04</option>
+    				<option value="05">05</option>
+    				<option value="06">06</option>
+    				<option value="07">07</option>
+    				<option value="08">08</option>
+    				<option value="09">09</option>
+    				<option value="10">10</option>
+    				<option value="11">11</option>
+    				<option value="12">12</option>
+    				<option value="13">13</option>
+    				<option value="14">14</option>
+    				<option value="15">15</option>
+    				<option value="16">16</option>
+    				<option value="17">17</option>
+    				<option value="18">18</option>
+    				<option value="19">19</option>
+    				<option value="20">20</option>
+    				<option value="21">21</option>
+    				<option value="22">22</option>
+    				<option value="23">23</option>
+    				<option value="24">24</option>
+    				<option value="25">25</option>
+    				<option value="26">26</option>
+    				<option value="27">27</option>
+    				<option value="28">28</option>
+    				<option value="29">29</option>
+    				<option value="30">30</option>
+     			</select></td>
+     		<td><select name="riHotfix" >
+    				<option value="00">00</option>
+    				<option value="01">01</option>
+    				<option value="02">02</option>
+    				<option value="03">03</option>
+    				<option value="04">04</option>
+    				<option value="05">05</option>
+    				<option value="06">06</option>
+    				<option value="07">07</option>
+    				<option value="08">08</option>
+    				<option value="09">09</option>
+    				<option value="10">10</option>
+    				<option value="11">11</option>
+    				<option value="12">12</option>
+    				<option value="13">13</option>
+    				<option value="14">14</option>
+    				<option value="15">15</option>
+    				<option value="16">16</option>
+    				<option value="17">17</option>
+    				<option value="18">18</option>
+    				<option value="19">19</option>
+    				<option value="20">20</option>
+    				<option value="21">21</option>
+    				<option value="22">22</option>
+    				<option value="23">23</option>
+    				<option value="24">24</option>
+    				<option value="25">25</option>
+    				<option value="26">26</option>
+    				<option value="27">27</option>
+    				<option value="28">28</option>
+    				<option value="29">29</option>
+    				<option value="30">30</option>
+     			</select></td>	
+			<td><select name="done_by">
+					<option value="{USER}">{USER}</option>
+    			</select></td>	
+			<td><select name="action">
+    				<option value="Request to pack">Request to pack</option>
+    				<option value="Cancel a request">Cancel a request</option>
+   		
+   				</select></td>	
+			
+		</tr>
+	</table>
+
+	<br>
+	<table  border="1" style="width:70%">
+	   	<tr>
+	   			<td  bgcolor="#EDE275"><font color = "blue">WIN</font></td>
+	  	</tr>
+			<tr>
+    			<td bgcolor="#FFF380">
+	  			<table  style="width:100%" border="1">
+  						<tr>
+  								<td>
+  									Tabs
+  								</td>
+  								<td>
+  										<table>
+  											<tr>
+    											<td>
+    													&nbsp;&nbsp;<input name="cbgroup1" type="checkbox" value="RI Logic Server (Win)" 	 	id="cb1_1" class="cbgroup1" checked disabled="disabled" onchange= "one(this,'group1_master')">&nbsp;RI Logic Server (Win)<br>
+   												</td>
+    										</tr>
+    									</table>
+    							</td>
+    					</tr>
+							<tr>
+  								<td>
+  										Jira tickets
+									</td>
+  								<td>
+ 											&nbsp;&nbsp;{ticket,ticket..}:<input type="text" id="jiraTickets"  name="jiraTickets" size="40">
+									</td>
+     					</tr>
+ 	    				<tr>
+  								<td>
+  										Install from FTP
+									</td>
+  								<td>
+ 											&nbsp;&nbsp;{server-dbid,server-dbid}:<input type="text" id="instFromFtp"  name="instFromFtp" size="40">
+									</td>
+     					</tr>
+ 	   		 	</table>
+     	</tr>
+	</table>
+
+		<br>
+	
+	
+	
+	
+		<table bgcolor="#aaaacc" border="1" style="width:70%">
+	   	<tr>
+	  		<td>Elements:</td>
+  			<td>Hotfix contents:</td>
+			</tr>
+	 		<td>
+					<table bgcolor="#aaaacc" border="1" style="width:100%">
+						<tr bgcolor="#88ffaa">
+							<td>
+									Replace jar
+							</td>
+							<td>	
+									select jar file:<input type="file" id="jar"  name="jar" size="50">
+							</td>
+							<td>
+								 	<button type="button" onclick="add_JAR()">add</button> 
+							</td>
+						</tr>
+						<tr bgcolor="#bb99cc">
+							<td>
+									update<br>
+									MIG_DETAILS<br>
+									table<br>
+									+<br>
+									Run manual mig
+							</td>
+							<td>
+									<table style="width:100%">
+										<tr>
+											<td>MIG id:</td>
+											<td><input type="text" id="migName"  name="migName" size="10"></td>
+										</tr>
+										<tr>
+											<td>MIG name:</td>
+											<td><input type="text" id="migName"  name="migName" size="10"></td>
+										</tr>
+										<tr>
+											<td>MIG type:</td>
+											<td><select name="migType">
+				    							<option value="70">70</option>
+				    							<option value="80">80</option>
+    	   									</select>
+    	   							</td>
+    	   						</tr>
+    	   						<tr>
+    	   							<td>select mig-mng.jar:</td>
+    	   							<td><input type="file" id="migmng"  name="migmng" size="50">
+										</tr>
+				 					</table>	
+							</td>
+							<td>
+								 	<button type="button" onclick="add_MIG()">add</button> 
+							</td>
+						</tr>
+						<tr bgcolor="#99aacc">
+							<td>
+									replace DDC
+							</td>
+							<td>	
+									<table style="width:100%">
+								 		<tr>
+								 			<td>
+								 				from SQL server:
+								 				<select name="ddcServer">
+				    							<option value="RI7QA">RI7QA</option>
+				    							<option value="RI9QA">RI9QA</option>
+    	   									</select><br>
+					 								from dbid:<input type="text" id="ddcDbid"  name="ddcDbid" size="2">
+											</td>
+								 			<td>
+								 				<input type="checkbox" id="ddc_CO0" name="ddc_CO0" value="CO0" checked> CO0<br>
+					 							<input type="checkbox" id="ddc_CO1" name="ddc_CO1" value="CO1" checked> CO1<br>
+					 							<input type="checkbox" id="ddc_CAT" name="ddc_CAT" value="CAT" checked> CAT
+											</td>
+									</tr>
+								</table>
+							</td>
+							<td>
+								 	<button type="button" onclick="add_DDC()">add</button> 
+							</td>
+
+						</tr>
+						<tr bgcolor="#aacccc">
+							<td>
+								 Run SQL
+							</td>
+							<td>	
+									select SQL file:<input type="file" id="sql"  name="sql" size="50">
+							</td>
+							<td>
+								 <button type="button" onclick="add_SQL()">add</button> 
+							</td>
+						</tr>
+					</table>
+				</td>
+				<td>
+					<table bgcolor="#aaaacc" border="0" style="width:50%">
+						<tr>
+							<td><textarea cols="70" rows="20" id="contents" name="contents" disabled="disabled"></textarea></td>
+							<td> <button type="button" onclick="clear_content()" >clear</button></td>
+
+		  			</tr>
+		  		</table>
+	  		</td>
+	  	</tr>
+		</table>
+		<br>
+	
+	
+	
+	
+	
+	
+	
+		<table bgcolor="#aaaacc" border="1" style="width:70%">
+	   	<tr>
+	  	<td>Note:</td>
+			<td><textarea cols="90" rows="5" name="appendToMail"></textarea></td>
+	  	</tr>
+		</table>
+		<br>
+	
+	 <INPUT TYPE=SUBMIT value="send the request">
+	
+	
+	</FORM>
+
+
+
+</BODY>
+
+</HTML>

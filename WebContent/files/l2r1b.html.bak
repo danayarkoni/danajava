@@ -1,0 +1,494 @@
+<head>
+ <script type="text/javascript">
+	function userPassChanged(){
+	 	 parent.l2r2.location.href = 'l2r2.html';
+	 	return false;
+	}
+	function msieversion() 
+	{
+	    var ua = window.navigator.userAgent;
+	    var msie = ua.indexOf("MSIE ");
+	    if (msie > 0) // If Internet Explorer, return version number
+	    {
+	     //   alert(parseInt(ua.substring(msie + 5, ua.indexOf(".", msie))));
+	    	//  window.location = "files/l2rib2e.html";
+	    }
+	    else  // If another browser, return 0
+	    {
+	        alert('please use internet explorer browser');
+	        window.location = "./l2r1b2e.html";
+	    }
+	    return false;
+	}
+</script>
+<script type="text/javascript" src="simpletreemenu.js">
+</script>
+<style>
+#select1 {width:150px; color:rgba(0, 0, 0, 0);}
+#select1:focus, #select1:focus {
+color:black;
+}
+.c1 {background:GreenYellow;}
+.c2 {background:Khaki;}
+.c3 {background:LightBlue;}
+.c4 {background:Pink;}
+.c5 {background:Peru;}
+.c10 {background:GreenYellow;}
+.c11 {background:SeaGreen;}
+.c12 {background:Khaki;}
+.c13 {background:LightBlue;}
+.c14 {background:Pink;}
+.c15 {background:LightGreen;}
+.c16 {background:Cyan;}
+.c17 {background:DarkGray;}
+.c18 {background:MediumPurple;}
+.c19 {background:GoldenRod;}
+.c31 {background:Peru;}
+.c10 {background:GreenYellow;}
+.c20 {background:Khaki;}
+.c21 {background:LightBlue;}
+.c30 {background:Pink;}
+</style>
+<link rel="stylesheet" type="text/css" href="simpletree.css" />
+</head>
+<body onload="javascript:ddtreemenu.flatten('treemenu1', 'contact')">
+<table  bgcolor="#ff0000"  width="100%">
+<tr><td align="center">Please use Internet Explorer browser</td></tr>
+</table>
+<FORM target="l2r2" METHOD=POST name="Form" id="Form"  ACTION="dist.jsp">
+<table  bgcolor="#ccbbbb"  border="1"  cellpadding="5"  width="100%">
+	<tr><td>User:</td><td>
+	<select  style="background-color: lightgray" name="user" onchange="userPassChanged()">
+		<option class="C19"  value="guest">guest</option>
+<option class="C21"  value="david.hagay">david.hagay</option>
+<option class="C21"  value="gonen.shoham">gonen.shoham</option>
+<option class="C21"  value="danielle.sapir">danielle.sapir</option>
+<option class="C1"  value="rajesh.jaini">rajesh.jaini</option>
+<option class="C21"  value="adi.koifman">adi.koifman</option>
+<option class="C1"  value="agnieszka.wozniczka">agnieszka.wozniczka</option>
+<option class="C1"  value="akhilesh.a">akhilesh.a</option>
+<option class="C21"  value="alex.walin">alex.walin</option>
+<option class="C21"  value="alice.elal">alice.elal</option>
+<option class="C21"  value="alon.pery">alon.pery</option>
+<option class="C1"  value="amit.dubey">amit.dubey</option>
+<option class="C1"  value="amruta.rajadhyaksha">amruta.rajadhyaksha</option>
+<option class="C1"  value="anamika.shukla">anamika.shukla</option>
+<option class="C1"  value="anamika.sinha">anamika.sinha</option>
+<option class="C1"  value="anitha.manjunath">anitha.manjunath</option>
+<option class="C1"  value="ankit.joshi">ankit.joshi</option>
+<option class="C21"  value="anna.rod">anna.rod</option>
+<option class="C1"  value="anna.wackermann">anna.wackermann</option>
+<option class="C1"  value="anuja.rawat">anuja.rawat</option>
+<option class="C1"  value="anuradha.anuradha">anuradha.anuradha</option>
+<option class="C1"  value="anuradha.shettigar">anuradha.shettigar</option>
+<option class="C1"  value="arpan.das">arpan.das</option>
+<option class="C21"  value="ashutosh.bhardwaj">ashutosh.bhardwaj</option>
+<option class="C1"  value="ashwini.s">ashwini.s</option>
+<option class="C21"  value="avishy.dafni">avishy.dafni</option>
+<option class="C1"  value="ayaazahmedh.yarzari">ayaazahmedh.yarzari</option>
+<option class="C1"  value="balasai.mallela">balasai.mallela</option>
+<option class="C1"  value="bartosz.dros">bartosz.dros</option>
+<option class="C1"  value="beata.jerzok-palka">beata.jerzok-palka</option>
+<option class="C1"  value="beata.rusek">beata.rusek</option>
+<option class="C21"  value="benny.shnaidman">benny.shnaidman</option>
+<option class="C1"  value="bhargavi.meduri">bhargavi.meduri</option>
+<option class="C1"  value="bhavani.sangolli">bhavani.sangolli</option>
+<option class="C1"  value="bindu.ns">bindu.ns</option>
+<option class="C1"  value="biplab.das">biplab.das</option>
+<option class="C19"  value="carol.quarles">carol.quarles</option>
+<option class="C1"  value="cezary.pliszka">cezary.pliszka</option>
+<option class="C1"  value="chaithra.j">chaithra.j</option>
+<option class="C1"  value="chaithra.kb">chaithra.kb</option>
+<option class="C1"  value="charitha.kuruba">charitha.kuruba</option>
+<option class="C1"  value="chinmaya.dehury">chinmaya.dehury</option>
+<option class="C19"  value="craig.robinson">craig.robinson</option>
+<option class="C1"  value="damian.ozga">damian.ozga</option>
+<option class="C1"  value="danae.murray">danae.murray</option>
+<option class="C19"  value="daniel.brilovich">daniel.brilovich</option>
+<option class="C21"  value="david.butbul">david.butbul</option>
+<option class="C21"  value="debby.lerman">debby.lerman</option>
+<option class="C21"  value="deepthi.dhananjaya">deepthi.dhananjaya</option>
+<option class="C20"  value="deletedenvs.user">deletedenvs.user</option>
+<option class="C1"  value="dhanya.mohan">dhanya.mohan</option>
+<option class="C1"  value="diego.feler">diego.feler</option>
+<option class="C1"  value="dina.goldenberg">dina.goldenberg</option>
+<option class="C1"  value="dorian.machalica">dorian.machalica</option>
+<option class="C21"  value="doron.karas">doron.karas</option>
+<option class="C21"  value="dudi.gura">dudi.gura</option>
+<option class="C21"  value="edna.meshulam">edna.meshulam</option>
+<option class="C21"  value="elad.natanzon">elad.natanzon</option>
+<option class="C21"  value="eli.benyair">eli.benyair</option>
+<option class="C21"  value="eran.soker">eran.soker</option>
+<option class="C21"  value="fawn.garrett">fawn.garrett</option>
+<option class="C1"  value="ganesh.d">ganesh.d</option>
+<option class="C21"  value="gary.teekah">gary.teekah</option>
+<option class="C21"  value="gene.carroll">gene.carroll</option>
+<option class="C21"  value="gil.yogev">gil.yogev</option>
+<option class="C21"  value="golda.rosenbaum">golda.rosenbaum</option>
+<option class="C1"  value="goncalo.brito-saude">goncalo.brito-saude</option>
+<option class="C19"  value="greg.turner">greg.turner</option>
+<option class="C1"  value="grzegorz.tworzydlo">grzegorz.tworzydlo</option>
+<option class="C1"  value="harikrishna.reddy">harikrishna.reddy</option>
+<option class="C1"  value="harish.g">harish.g</option>
+<option class="C1"  value="harshith.merugu">harshith.merugu</option>
+<option class="C1"  value="hemanth.kn">hemanth.kn</option>
+<option class="C1"  value="hima.shasanala">hima.shasanala</option>
+<option class="C1"  value="indhu.a">indhu.a</option>
+<option class="C21"  value="ishwari.kadam">ishwari.kadam</option>
+<option class="C21"  value="israel.aronov">israel.aronov</option>
+<option class="C21"  value="israel.paz">israel.paz</option>
+<option class="C1"  value="iswaran.athmanadan">iswaran.athmanadan</option>
+<option class="C21"  value="jaishish.ranjan">jaishish.ranjan</option>
+<option class="C21"  value="jakov.greenbaum">jakov.greenbaum</option>
+<option class="C1"  value="jakub.rutkowski">jakub.rutkowski</option>
+<option class="C1"  value="jaroslaw.karczewski">jaroslaw.karczewski</option>
+<option class="C1"  value="jason.brown">jason.brown</option>
+<option class="C1"  value="joao.soares">joao.soares</option>
+<option class="C21"  value="jonathan.daniel">jonathan.daniel</option>
+<option class="C1"  value="jude.ashwin">jude.ashwin</option>
+<option class="C1"  value="karolina.oliwa">karolina.oliwa</option>
+<option class="C21"  value="kavitha.s">kavitha.s</option>
+<option class="C19"  value="kevin.hilferty">kevin.hilferty</option>
+<option class="C1"  value="kumar.pallav">kumar.pallav</option>
+<option class="C21"  value="lahav.alia">lahav.alia</option>
+<option class="C1"  value="lakshmi.sethuraman">lakshmi.sethuraman</option>
+<option class="C1"  value="lalith.g">lalith.g</option>
+<option class="C1"  value="lavanya.kasturi">lavanya.kasturi</option>
+<option class="C21"  value="lilach.weiss">lilach.weiss</option>
+<option class="C21"  value="lior.barkai">lior.barkai</option>
+<option class="C1"  value="lukasz.marcola">lukasz.marcola</option>
+<option class="C1"  value="maciej.szul">maciej.szul</option>
+<option class="C1"  value="madhusudhan.et">madhusudhan.et</option>
+<option class="C1"  value="mainak.das">mainak.das</option>
+<option class="C21"  value="malka.blau">malka.blau</option>
+<option class="C1"  value="manish.ranjan">manish.ranjan</option>
+<option class="C1"  value="manoj.bondada">manoj.bondada</option>
+<option class="C21"  value="maor.ben-ami">maor.ben-ami</option>
+<option class="C1"  value="marcelina.misiuga">marcelina.misiuga</option>
+<option class="C1"  value="marcin.wyrwalski">marcin.wyrwalski</option>
+<option class="C1"  value="marek.staron">marek.staron</option>
+<option class="C21"  value="maria.kogan">maria.kogan</option>
+<option class="C1"  value="maria.rapp">maria.rapp</option>
+<option class="C21"  value="mark.shachar">mark.shachar</option>
+<option class="C1"  value="mateusz.poltier">mateusz.poltier</option>
+<option class="C1"  value="meghana.s">meghana.s</option>
+<option class="C1"  value="menka.pandey">menka.pandey</option>
+<option class="C21"  value="merav.moiselini">merav.moiselini</option>
+<option class="C19"  value="michael.grabish">michael.grabish</option>
+<option class="C1"  value="michal.garbas">michal.garbas</option>
+<option class="C1"  value="michal.joachimski">michal.joachimski</option>
+<option class="C21"  value="michal.nalepa">michal.nalepa</option>
+<option class="C1"  value="michal.ostrega">michal.ostrega</option>
+<option class="C21"  value="mikhail.lazarev">mikhail.lazarev</option>
+<option class="C21"  value="miriam.mordechayov">miriam.mordechayov</option>
+<option class="C1"  value="mohammed.tk">mohammed.tk</option>
+<option class="C1"  value="monika.ganko">monika.ganko</option>
+<option class="C1"  value="mriganka.paul">mriganka.paul</option>
+<option class="C1"  value="mrinal.monu">mrinal.monu</option>
+<option class="C1"  value="murali.db">murali.db</option>
+<option class="C1"  value="nanditha.m">nanditha.m</option>
+<option class="C21"  value="naveen.choudhary">naveen.choudhary</option>
+<option class="C19"  value="neil.hodges">neil.hodges</option>
+<option class="C21"  value="nelli.tzibulsky">nelli.tzibulsky</option>
+<option class="C1"  value="nidhi.singh">nidhi.singh</option>
+<option class="C1"  value="niket.sharma">niket.sharma</option>
+<option class="C1"  value="nilesh.chandrapuri">nilesh.chandrapuri</option>
+<option class="C20"  value="nina.esilevsky">nina.esilevsky</option>
+<option class="C1"  value="nivedha.a">nivedha.a</option>
+<option class="C1"  value="nrupen.kamtekar">nrupen.kamtekar</option>
+<option class="C21"  value="nurit.zaltsman">nurit.zaltsman</option>
+<option class="C1"  value="olga.chuyko">olga.chuyko</option>
+<option class="C21"  value="oriya.haduk">oriya.haduk</option>
+<option class="C1"  value="pankaj.prajapati">pankaj.prajapati</option>
+<option class="C1"  value="patricia.c">patricia.c</option>
+<option class="C1"  value="paulina.kaczmarczyk">paulina.kaczmarczyk</option>
+<option class="C1"  value="pavan.agadi">pavan.agadi</option>
+<option class="C1"  value="peter.richardson">peter.richardson</option>
+<option class="C1"  value="pinky.baruah">pinky.baruah</option>
+<option class="C1"  value="prabhakar.chowdhury">prabhakar.chowdhury</option>
+<option class="C1"  value="prabu.dhandapani">prabu.dhandapani</option>
+<option class="C1"  value="prathyusha.yetukuri">prathyusha.yetukuri</option>
+<option class="C1"  value="princy.thomas">princy.thomas</option>
+<option class="C1"  value="priyanka.garga">priyanka.garga</option>
+<option class="C1"  value="priyanka.vadhvani">priyanka.vadhvani</option>
+<option class="C1"  value="rafal.kontowicz">rafal.kontowicz</option>
+<option class="C1"  value="rafal.kusz">rafal.kusz</option>
+<option class="C1"  value="ragapriya.b">ragapriya.b</option>
+<option class="C1"  value="rajesh.jangeti">rajesh.jangeti</option>
+<option class="C1"  value="rajkumar.kewalramani">rajkumar.kewalramani</option>
+<option class="C1"  value="rakesh.v">rakesh.v</option>
+<option class="C1"  value="ramani.r">ramani.r</option>
+<option class="C19"  value="ran.givati">ran.givati</option>
+<option class="C1"  value="regina.zaidler">regina.zaidler</option>
+<option class="C1"  value="revanth.amaravadi">revanth.amaravadi</option>
+<option class="C1"  value="roei.dubnikov">roei.dubnikov</option>
+<option class="C1"  value="ron.goldenberg">ron.goldenberg</option>
+<option class="C1"  value="runi.n">runi.n</option>
+<option class="C1"  value="rupendra.raghu">rupendra.raghu</option>
+<option class="C1"  value="rushikesh.dhekane">rushikesh.dhekane</option>
+<option class="C21"  value="ruthi.sofer">ruthi.sofer</option>
+<option class="C1"  value="sachin.shahi2">sachin.shahi2</option>
+<option class="C1"  value="sadanand.sonkar">sadanand.sonkar</option>
+<option class="C1"  value="sahil.charolia">sahil.charolia</option>
+<option class="C1"  value="sailesh.pottem">sailesh.pottem</option>
+<option class="C1"  value="sangram.pattnaik">sangram.pattnaik</option>
+<option class="C1"  value="satyajeet.padhy">satyajeet.padhy</option>
+<option class="C1"  value="sebastian.piasecki">sebastian.piasecki</option>
+<option class="C21"  value="shani.klajman">shani.klajman</option>
+<option class="C1"  value="shehnaz.s">shehnaz.s</option>
+<option class="C1"  value="shivam.shukla">shivam.shukla</option>
+<option class="C21"  value="shlomit.maharat">shlomit.maharat</option>
+<option class="C1"  value="shruthi.desai">shruthi.desai</option>
+<option class="C1"  value="shubham.paonasker">shubham.paonasker</option>
+<option class="C21"  value="shyam.s">shyam.s</option>
+<option class="C21"  value="slava.shtrirbu">slava.shtrirbu</option>
+<option class="C21"  value="sofia.shishkin">sofia.shishkin</option>
+<option class="C20"  value="spareenvs.user">spareenvs.user</option>
+<option class="C1"  value="spurthi.r">spurthi.r</option>
+<option class="C1"  value="sridhar.k">sridhar.k</option>
+<option class="C1"  value="sriram.venkatraman">sriram.venkatraman</option>
+<option class="C21"  value="stanislav.p">stanislav.p</option>
+<option class="C1"  value="sudhesh.kumar">sudhesh.kumar</option>
+<option class="C1"  value="suganya.b">suganya.b</option>
+<option class="C1"  value="suhas.sharma">suhas.sharma</option>
+<option class="C1"  value="sujay.kagitha">sujay.kagitha</option>
+<option class="C1"  value="suresh.bommisetty">suresh.bommisetty</option>
+<option class="C1"  value="suruchi.gupta">suruchi.gupta</option>
+<option class="C1"  value="swapnil.saurvi">swapnil.saurvi</option>
+<option class="C1"  value="swati.prasad">swati.prasad</option>
+<option class="C21"  value="tal.gordon">tal.gordon</option>
+<option class="C1"  value="tamilselvan.l">tamilselvan.l</option>
+<option class="C21"  value="tim.fredette">tim.fredette</option>
+<option class="C1"  value="tomasz.plaszczyk">tomasz.plaszczyk</option>
+<option class="C1"  value="tomasz.skoczewski">tomasz.skoczewski</option>
+<option class="C1"  value="tomasz.slowik">tomasz.slowik</option>
+<option class="C1"  value="touqeer.varsala">touqeer.varsala</option>
+<option class="C1"  value="tushar.khapare">tushar.khapare</option>
+<option class="C1"  value="uday.manawadi">uday.manawadi</option>
+<option class="C21"  value="udi.matot">udi.matot</option>
+<option class="C1"  value="umesh.bachanalli">umesh.bachanalli</option>
+<option class="C1"  value="vadivel.naickar">vadivel.naickar</option>
+<option class="C1"  value="vasunagarjuna.b">vasunagarjuna.b</option>
+<option class="C1"  value="vavya.chopra">vavya.chopra</option>
+<option class="C1"  value="venkat.p">venkat.p</option>
+<option class="C1"  value="vidya.kulkarni">vidya.kulkarni</option>
+<option class="C21"  value="vishal.gavas">vishal.gavas</option>
+<option class="C1"  value="wojciech.wlodarski">wojciech.wlodarski</option>
+<option class="C21"  value="yaara.levy">yaara.levy</option>
+<option class="C20"  value="yael.benyishayahu">yael.benyishayahu</option>
+<option class="C21"  value="yael.grinwald">yael.grinwald</option>
+<option class="C1"  value="yojana.chikodi">yojana.chikodi</option>
+<option class="C21"  value="yossi.siboni">yossi.siboni</option>
+<option class="C21"  value="yulia.shvartsgor">yulia.shvartsgor</option>
+   </select>
+	</td></tr>
+	<tr><td>Password:</td><td> <input type="password" name="pass" value="password" size="12"  onchange="userPassChanged()"></td></tr>
+	   <input type="hidden" id="opt" name="opt" /><br>
+</table>
+<br>
+<table bgcolor="#bbbbcc"  border="1"  cellpadding="10" width="100%">
+	<tr><td>
+ <a href="javascript:ddtreemenu.flatten('treemenu1', 'expand')">Expand tree</a> 
+</td><td>
+ <a href="javascript:ddtreemenu.flatten('treemenu1', 'contact')">Close tree</a>
+</td></tr>
+</table>
+<br>
+<ul id="treemenu1" class="treeview" >
+   	<li> <a  href="javascript:{}" name="b4" onclick=window.Form.opt.value="publicMailPassword~.";document.Form.submit(); return false>mail me my password</a></li>
+	<li>HAGAY
+		<ul>
+	   	<li> <a  href="javascript:{}" name="b4" onclick=window.Form.opt.value="publicDebug1~.";document.Form.submit(); return false>debug1</a></li>
+	  	<li> <a  href="javascript:{}" name="b4" onclick=window.Form.opt.value="publicDebug2~.";document.Form.submit(); return false>debug2</a></li>
+	   	<li> <a  href="javascript:{}" name="b4" onclick=window.Form.opt.value="Debug3~.";document.Form.submit(); return false>debug3</a></li>
+	   	<li> <a  href="javascript:{}" name="b4" onclick=window.Form.opt.value="runRemoteCommand~cfg.";document.Form.submit(); return false>runRemoteCommand</a></li>
+	   	<li> <a  href="javascript:{}" name="b4" onclick=window.Form.opt.value="publicGetServersStatus~.";document.Form.submit(); return false>getServersStatus</a></li>
+		<li> <a  href="javascript:{}" name="b4" onclick=window.Form.opt.value="publicHagPrivate~.";document.Form.submit(); return false>HagPrivate</a></li>
+		</ul>
+	</li>
+	<li>Register
+		<ul>
+	   	<!--<li> <a  href="javascript:{}" name="b4" onclick=window.Form.opt.value="publicRegister~new";document.Form.submit(); return false><font color="green">register form</font></a></li>-->
+	   	<li> <a  href="javascript:{}" name="b4" onclick=window.Form.opt.value="changePassword~.";document.Form.submit(); return false><font color="red">Change my password(user)</font></a></li>
+	   		<!--<li> <a  href="javascript:{}" name="b4" onclick=window.Form.opt.value="authorizationsRequest~.";document.Form.submit(); return false><font color="red">Authorizations request(user)</font></a></li>-->
+		<!--<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="add_user~.";document.Form.submit(); return false><font color="red">Add_user(devOps)</font></a></li>	-->	
+		<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="addCfgMenuWebUser~.";document.Form.submit(); return false><font color="red">addCfgMenuWebUser(devOps)</font></a></li>		
+		<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="delCfgMenuWebUser~.";document.Form.submit(); return false><font color="red">delCfgMenuWebUser(devOps)</font></a></li>		
+		<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="setAuthorizationsPerUser~.";document.Form.submit(); return false><font color="red">setAuthorizationsPerUser(devOps)</font></a></li>		
+		<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="setUsersPerAuthorization~.";document.Form.submit(); return false><font color="red">setUsersPerAuthorization(devOps)</font></a></li>		
+		</ul>
+	</li>
+	<li>BIS
+		<ul>
+			<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="AccumulativeAddRequest~files/AccumulativeAddRequest.html";document.Form.submit(); return false><font color="red">Request</font></a></li>		
+			<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="publicReadHtmlLoc1~AccumulativeAddLogsV4520-M02-P00.html";document.Form.submit(); return false><font color="green">4520-M02-P00</font></a></li>		
+			<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="publicReadHtmlLoc1~AccumulativeAddLogsV4520-M03-P00.html";document.Form.submit(); return false><font color="green">4520-M03-P00</font></a></li>		
+			<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="publicReadHtmlLoc1~AccumulativeAddLogsV4520-M04-P00.html";document.Form.submit(); return false><font color="green">4520-M04-P00</font></a></li>		
+			<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="publicReadHtmlLoc1~AccumulativeAddLogsV4520-M05-P00.html";document.Form.submit(); return false><font color="green">4520-M05-P00</font></a></li>		
+			<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="publicReadHtmlLoc1~AccumulativeAddLogsV4530-M00-P00.html";document.Form.submit(); return false><font color="green">4530-M00-P00</font></a></li>		
+			<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="publicReadHtmlLoc1~AccumulativeAddLogsV4530-M01-P00.html";document.Form.submit(); return false><font color="green">4530-M01-P00</font></a></li>		
+			<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="publicReadHtmlLoc1~AccumulativeAddLogsV4530-M02-P00.html";document.Form.submit(); return false><font color="green">4530-M02-P00</font></a></li>		
+			<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="publicReadHtmlLoc1~AccumulativeAddLogsV4530-M03-P00.html";document.Form.submit(); return false><font color="green">4530-M03-P00</font></a></li>		
+			<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="publicReadHtmlLoc1~bisCopyWin.html";document.Form.submit(); return false><font color="green">Copy-to-prod logs</font></a></li>		
+		</ul>
+	</li>
+	<li>RI
+		<ul>
+			<li>CM
+				<ul>
+			<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="getDdcAsBcp~.";document.Form.submit(); return false><font color="red">get DDC as BCP</font></a></li>		
+			<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="merge_and_build~.";document.Form.submit(); return false><font color="red">merge_and_build</font></a></li>		
+			<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="AZURE~.";document.Form.submit(); return false><font color="red">AZURE</font></a></li>		
+			<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="powershell_debug~.";document.Form.submit(); return false><font color="red">powershell_debug</font></a></li>		
+				</ul>
+			</li>
+			<li>GARD-cloud
+				<ul>
+			<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="publicGardEnvs~.";document.Form.submit(); return false><font color="green">GARD cloud envs</font></a></li>		
+				</ul>
+			</li>
+			<li>I know what you did
+				<ul>
+			<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="publicRiPrc1000~.";document.Form.submit();return false><font color="green">i know what you did(last 1000)fastest</font></a></li>		
+			<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="publicRiPrc10000~.";document.Form.submit();return false><font color="green">i know what you did(last 10000)</font></a></li>		
+			<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="publicRiPrcFull~.";document.Form.submit();return false><font color="blue">i know what you did(full)</font></a></li>		
+				</ul>
+			</li>
+			<li>Servers
+			<ul>
+			<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="publicRiServers~.";document.Form.submit(); return false><font color="green">WIN servers</font></a></li>		
+			</ul>
+			</li>
+			<li>Environments and migs
+				<ul>
+			<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="publicRiEnvs~.";document.Form.submit(); return false><font color="green">WIN envs</font></a></li>		
+			<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="publicRiEnvsAzure~.";document.Form.submit(); return false><font color="green">AZURE envs</font></a></li>	
+			<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="publicRiEnvsI5os~.";document.Form.submit(); return false><font color="green">I5OS envs</font></a></li>		
+			<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="dontMessWinEnvs~.";document.Form.submit(); return false><font color="red">don't mess with my env</font></a></li>		
+			<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="publicMigsList~.";document.Form.submit(); return false><font color="green">MIGs list</font></a></li>		
+		 	<!--<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="publicIwaysLinks~.";document.Form.submit();return false><font color="green">I-WAY links (AS400 only)</font></a></li>		-->	
+			 	<!--<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="publicTomcatsStatus~.";document.Form.submit();return false><font color="green">tomcats status</font></a></li>	-->	
+				</ul>
+			</li>
+			<li>UTP
+				<ul>
+				<li>DSP tasks tables
+					<ul>
+					<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="publicTasksTable~dsp!RITASKS0901";document.Form.submit(); return false><font color="green">0901</font></a></li>	
+					<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="publicTasksTable~dsp!RITASKS0801";document.Form.submit(); return false><font color="green">0801</font></a></li>	
+					<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="publicTasksTable~dsp!RITASKS0800";document.Form.submit(); return false><font color="green">0800</font></a></li>	
+					<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="publicTasksTable~dsp!RITASKS0702M01";document.Form.submit(); return false><font color="green">0702M01</font></a></li>	
+					<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="publicTasksTable~dsp!RITASKS0702";document.Form.submit(); return false><font color="green">0702</font></a></li>		
+					<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="publicTasksTable~dsp!RITASKS0701";document.Form.submit(); return false><font color="green">0701</font></a></li>		
+					<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="publicTasksTable~dsp!RITASKS0700M01";document.Form.submit(); return false><font color="green">0700M01</font></a></li>		
+					<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="publicTasksTable~dsp!RITASKS0609M01";document.Form.submit(); return false><font color="green">0609M01</font></a></li>		
+					<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="publicTasksTable~dsp!RITASKS0608M01";document.Form.submit(); return false><font color="green">0608M01</font></a></li>		
+					<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="publicTasksTable~dsp!RITASKS0607M01";document.Form.submit(); return false><font color="green">0607M01</font></a></li>		
+					<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="publicTasksTable~dsp!RITASKS0606M02";document.Form.submit(); return false><font color="green">0606M02</font></a></li>		
+					</ul>
+				</li>
+				<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="openNewTask~WIN";document.Form.submit(); return false><font color="red">Open new task</font></a></li>		
+				<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="closeTask~WIN";document.Form.submit(); return false><font color="red">Close task</font></a></li>		
+				<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="compileIOM~WIN";document.Form.submit(); return false><font color="red">Compile IOM</font></a></li>		
+				<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="runTranFile~WIN";document.Form.submit(); return false><font color="red">Run tran file</font></a></li>		
+				<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="createXmlFromTaskAndDates~WIN";document.Form.submit(); return false><font color="red">Create XML from task and dates</font></a></li>		
+				</ul>
+			</li>
+			<li>Minor versions
+				<ul>
+					<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="minorVersionsRel~WIN";document.Form.submit(); return false><font color="red">release elements to MinorVersion</font></a></li>		
+					<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="minorVersionsPack~WIN";document.Form.submit(); return false><font color="red">pack MinorVersion to FTP</font></a></li>		
+					<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="minorVersionsNew~WIN";document.Form.submit(); return false><font color="red">create new MinorVersion</font></a></li>		
+					<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="minorVersionsLoadTask~WIN";document.Form.submit(); return false><font color="red">load task from trunk</font></a></li>		
+				</ul>
+			</li>
+			<li>Release
+				<ul>
+				<!--		<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="minorVersions~WIN";document.Form.submit(); return false><font color="red">minor versions</font></a></li>		-->	
+				<!--	<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="reqRelease~WIN";document.Form.submit(); return false><font color="red">send a Release-Request(WIN)</font></a></li>		-->		
+					<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="reqReleaseNew~WIN";document.Form.submit(); return false><font color="red">send a Release-Request_new(WIN)</font></a></li>		
+				<!--	<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="reqRelease4PreVersion~WIN";document.Form.submit(); return false><font color="red">send a MinorVersion Release-Request</font></a></li>	-->		
+					<!--  <li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="ChangeUpdateNumberRi~.";document.Form.submit(); return false><font color="red">Change update number</font></a></li>-->		
+					<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="publicMigsList~.";document.Form.submit(); return false><font color="green">MIGs list</font></a></li>		
+					<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="AddMigRequest~.";document.Form.submit(); return false><font color="red">add mig request(DEV)</font></a></li>
+					<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="publicDeleteFromMigDetails~.";document.Form.submit(); return false><font color="green">DeleteFromMigDetails</font></a></li>		
+					<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="ChangeMxx~.";document.Form.submit(); return false><font color="red">Change Mxx request-DEV</font></a></li>		
+					<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="ChangeMxxCm~.";document.Form.submit(); return false><font color="red">Change Mxx execution-CM</font></a></li>		
+				</ul>
+			</li>
+			<li>Client module (v1.1)
+				<ul>
+				<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="insertClientModuleMig~WIN";document.Form.submit(); return false><font color="red">insert ClientModule mig</font></a></li>		
+				<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="publicClientModuleMigsList~.";document.Form.submit(); return false><font color="green">ClientModule MIGs list</font></a></li>		
+				<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="ClientModuleBuild~.";document.Form.submit(); return false><font color="red">ClientModule build</font></a></li>		
+				</ul>
+			</li>	
+			<li>Client module future release (v2.0)
+				<ul>
+				<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="insertClientModuleMigFutureRelease~WIN";document.Form.submit(); return false><font color="red">insert FutureRelease ClientModule mig</font></a></li>		
+				<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="publicClientModuleMigsListFutureRelease~.";document.Form.submit(); return false><font color="green">FutureRelease ClientModule MIGs list</font></a></li>		
+				</ul>
+			</li>	
+			<li>ScheduleF
+				<ul>
+				<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="insertScheduleFMig~WIN";document.Form.submit(); return false><font color="red">insert ScheduleF mig</font></a></li>		
+				<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="publicScheduleFMigsList~.";document.Form.submit(); return false><font color="green">ScheduleF MIGs list</font></a></li>		
+				</ul>
+			</li>	
+			<li>Pack 
+				<ul>
+				<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="RiFtpPackRequest~files/RiFtpPackRequestUpdateWin.html";document.Form.submit(); return false><font color="red">pack update</font></a></li>		
+				<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="reqCreateHotfixCI~.WIN";document.Form.submit(); return false><font color="red">no need - pack hotfix(cmInstaller)</font></a></li>
+				<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="reqCreateHotfixA~.WIN";document.Form.submit(); return false><font color="red">pack hotfix(ARIA)</font></a></li>
+				</ul>
+			</li>
+		<!--		<li>Refresh 
+				<ul>
+				<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="reqRefreshEnv~WIN";document.Form.submit(); return false><font color="red">refresh environment(WIN)</font></a></li>		
+				</ul>
+			</li>-->
+		<li>Requests 
+				<ul>
+				<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="publicReadHtmlLoc1~howtoSendRequest.html";document.Form.submit();return false><font color="blue">Request(howto)</font></a></li>		
+			<!--		<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="generalRequest~WIN";document.Form.submit(); return false><font color="red">send general request only (WIN)</font></a></li>		
+				<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="addNewCustomerRequest~WIN";document.Form.submit(); return false><font color="red">add new Customer request</font></a></li>	
+				-->
+				<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="RequestsStatus~All";document.Form.submit(); return false><font color="blue">Requests Status(all)</font></a></li>		
+				<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="RequestsStatus~100";document.Form.submit(); return false><font color="blue">Requests Status(last 100)</font></a></li>	
+					<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="Requests4packagesLink~All";document.Form.submit(); return false><font color="blue">Requests4packagesLink(all)</font></a></li>	
+				<!--		<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="RequestsLog~WIN";document.Form.submit(); return false><font color="blue">Requests log</font></a></li>		
+						-->
+				<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="RequestsNew~WIN";document.Form.submit(); return false><font color="blue">Send a request</font></a></li>		
+			</ul>
+			</li>
+			<li>Create new 
+				<ul>
+			<!--		<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="reqCrtNewEnv~WIN";document.Form.submit(); return false><font color="red">create new environment(WIN)</font></a></li>		
+				-->
+				<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="reqUtilityDev~files/reqUtilityDev.html";document.Form.submit(); return false><font color="red">cm-utilities development</font></a></li>		
+				</ul>
+			</li>	
+			<li>Servers info 
+				<ul>
+				<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="publicAppServersInfo~.";document.Form.submit(); return false><font color="green">AppServersInfo</font></a></li>		
+				</ul>
+			</li>
+				<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="publicReadHtmlLoc1~devIntEnvs.html";document.Form.submit();return false><font color="blue">DEV & INT list</font></a></li>		
+    			<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="publicBackupDbWithNotesList~WIN";document.Form.submit(); return false><font color="red">backup-DB-With-Notes List</font></a></li>		
+	<!-- 			<li>Pack-FTP logs 
+				<ul>
+					<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="publicReadHtmlLoc1~RiFtpPackLogs0603.html";document.Form.submit();return false><font color="green">0603</font></a></li>		
+					<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="publicReadHtmlLoc1~RiFtpPackLogs0606.html";document.Form.submit();return false><font color="green">0606</font></a></li>		
+					<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="publicReadHtmlLoc1~RiFtpPackLogs0607.html";document.Form.submit();return false><font color="green">0607</font></a></li>		
+					<li> <a href="javascript:{}" name="b4" onclick=window.Form.opt.value="publicReadHtmlLoc1~RiFtpUniquePackLogs.html";document.Form.submit();return false><font color="green">unique</font></a></li>		
+				</ul>
+			</li>-->	
+		</ul>
+	</li>
+</ul>
+</FORM>
+<script type="text/javascript">
+	ddtreemenu.createTree("treemenu1", true)
+	ddtreemenu.createTree("treemenu2", false)
+</script>
+</body>

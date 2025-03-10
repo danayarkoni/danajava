@@ -1,0 +1,80 @@
+<head>
+<script type="text/javascript" src="simpletreemenu.js">
+</script>
+
+
+	
+<link rel="stylesheet" type="text/css" href="simpletree.css" />
+</head>
+<body onload="javascript:ddtreemenu.flatten('treemenu1', 'contact')">
+
+<FORM target="l2r2" METHOD=POST id="Form"  name="Form" ACTION="dist.jsp">
+<table  bgcolor="#ccbbbb"  border="1"  cellpadding="5">
+	<tr><td>User:</td><td> <input type="text" name="user" id="user" value="Guest" size="12"></td></tr>
+	<tr><td>Password:</td><td> <input type="password" name="pass" value="password" size="12"></td></tr>
+  <input type="text" id="opt" name="opt" /><br>
+</table>
+<br>
+
+<table bgcolor="#bbbbcc"  border="1"  cellpadding="10">
+	<tr><td>
+ <a href="javascript:ddtreemenu.flatten('treemenu1', 'expand')">Expand tree</a> 
+</td><td>
+ <a href="javascript:ddtreemenu.flatten('treemenu1', 'contact')">Close tree</a>
+</td></tr>
+</table>
+<br>
+<font color = "#009900">green link=public use</font><br>
+<font color = "#ff0000">red link=registered users only</font>
+
+
+<br>
+<ul id="treemenu1" class="treeview" >
+	<li>HAGAY
+		<ul>
+			<li><a target="l2r2" href="debug.jsp?value=kuku">debug</a></li>
+			<li><a target="l2r2" href="#" onclick="getURL();">debug1</a></li>
+	  	<li><a target="l2r2" href="javascript:void(0)" onclick="getURL();">debug2</a></li>
+	  	<li><a target="l2r2" href="javascript:void(0)" onclick="getURL();">debug2</a></li>
+		</ul>
+	</li>
+	<li>BIS
+		<ul>
+			<li>ADD Request
+				<ul>
+					<li><a target="l2r2" href="AccumulativeAddRequest.html">Request</a></li>
+				</ul>
+			</li>
+			<li>ADD Logs
+				<ul>
+					<li><a target="l2r2" href="AccumulativeAddLogs.jsp?value=V4520-M02-P00">V4520-M02-P00 logs</a></li>
+					<li><a target="l2r2" href="AccumulativeAddLogs.jsp?value=V4520-M03-P00">V4520-M03-P00 logs</a></li>
+					<li><a target="l2r2" href="AccumulativeAddLogs.jsp?value=V4520-M04-P00">V4520-M04-P00 logs</a></li>
+					<li><a target="l2r2" href="AccumulativeAddLogs.jsp?value=V4520-M05-P00">V4520-M05-P00 logs</a></li>		
+					<li><a target="l2r2" href="AccumulativeAddLogs.jsp?value=V4530-M00-P00">V4530-M00-P00 logs</a></li>				
+					<li><a  href="javascript:{}"  name="b4"  onclick=window.Form.opt.value="AccumulativeAddLogs~V4530-M00-P00 logs";document.getElementById('Form').submit(); return false>aaaa</a></li>
+				</ul>
+			</li>
+
+		</ul>
+	</li>
+	<li>RI
+		<ul>
+			<li>Pack to FTP
+				<ul>
+					<li><a target="l2r2" href="RiFtpPackRequest.html">Request</a></li>
+					<li><a target="l2r2" href="RiFtpPackLogs.jsp">logs</a></li>
+					<li><a target="l2r2" href="Password.jsp?value=RI change update number">Change update number</a></li>
+				</ul>
+			</li>
+
+		</ul>
+	</li>
+</ul>
+</form>
+
+<script type="text/javascript">
+	ddtreemenu.createTree("treemenu1", true)
+	ddtreemenu.createTree("treemenu2", false)
+</script>
+</body>

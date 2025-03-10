@@ -1,0 +1,113 @@
+<HTML>
+<body bgcolor="#ccccbb">
+	
+	<font size=4 color="blue"><u>Accumulative Add Request:</u></font>
+	<br>
+	<br><font size=2 color="blue">Select the correct option and submit the form</font>
+	<br><br>
+	
+	<FORM METHOD=POST name="Form" ACTION="AccumulativeAddRequest.jsp">
+	
+	<table bgcolor="#aaaacc" border="1" style="width:70%">
+		<tr>
+			<td>eMerge version:</td>		
+			<td>add number:</td>		
+			<td>done by:</td>		
+			<td>action:</td>
+		</tr>
+		<tr>
+			<td><select name="eMergeVersion">
+    				<option value="V4520-M05-P00">V4520-M05-P00</option>
+    				<option value="V4520-M04-P00">V4520-M04-P00</option>
+      				<option value="V4520-M02-P00">V4520-M02-P00</option>
+    				<option value="V4530-M00-P00">V4530-M00-P00</option>
+   					<option value="V4530-M01-P00">V4530-M01-P00</option>
+   					<option value="V4530-M02-P00">V4530-M02-P00</option>
+   					<option value="V4530-M03-P00">V4530-M03-P00</option>
+     		</select></td>	
+			<td><select name="eMergeAdd">
+    				<option value="01">01</option>
+    				<option value="02">02</option>
+    				<option value="03">03</option>
+    				<option value="04">04</option>
+    				<option value="05">05</option>
+    				<option value="06">06</option>
+    				<option value="07">07</option>
+    				<option value="08">08</option>
+    				<option value="09">09</option>
+    				<option value="10">10</option>
+    				<option value="11">11</option>
+    				<option value="12">12</option>
+    				<option value="13">13</option>
+    				<option value="14">14</option>
+    				<option value="15">15</option>
+    				<option value="16">16</option>
+    				<option value="17">17</option>
+    				<option value="18">18</option>
+    				<option value="19">19</option>
+    				<option value="20">20</option>
+    				<option value="21">21</option>
+    				<option value="22">22</option>
+    				<option value="23">23</option>
+    				<option value="24">24</option>
+    				<option value="25">25</option>
+    				<option value="26">26</option>
+    				<option value="27">27</option>
+    				<option value="28">28</option>
+    				<option value="29">29</option>
+    				<option value="30">30</option>
+     			</select></td>
+			<td><select name="done_by">
+    				<option value="{USER}">{USER}</option>
+    			</select></td>	
+			<td><select name="action">
+    				<option value="Request to pack add">Request to pack add</option>
+    				<option value="Cancel a request">Cancel a request</option>
+   					<option value="Add packed">Add packed</option>
+   					<option value="Add approved by QA">Add approved by QA</option>
+   					<option value="Add released to customer">Add released to customer</option>
+	   			</select></td>	
+		</tr>
+	</table>
+	<br>
+	<table bgcolor="#aaaacc" border="1" style="width:70%">
+	   	<tr>
+    		<td>add_description</td>
+    		<td><input type="text" name="add_description" size="80"> </td>
+		</tr>
+		<tr>
+			<td>append to mail:</td>
+			<td><textarea cols="90" rows="3" name="appendToMail"></textarea></td>
+	   	</tr>
+		<tr>
+			<td>send to:</td>
+			<td><table border="1" style="width:100%">
+	    	<tr><td>
+	    	<input type="checkbox" name="cc" value="yerach.s@sapiens.com" checked>Yerach Shlomo<br>
+    		<input type="checkbox" name="cc" value="yael.b@sapiens.com" checked>Yael Ben Yishayahu<br>
+			<input type="checkbox" name="cc" value="nina.e@sapiens.com" checked>Nina Esilevsky<br>
+			
+	    	</td><td>
+    		<input type="checkbox" name="cc" value="Slava.Shtrirbu@sapiens.com" checked>Slava Shtrirbu<br>
+			<input type="checkbox" name="cc" value="jakov.g@sapiens.com" checked>Jakov Greenbaum<br>
+	  
+			<input type="checkbox" name="cc" value="galit.t@sapiens.com" checked>Galit Tchernis<br>
+			</td><td>
+     		<input type="checkbox" name="cc" value="david.h@sapiens.com" checked>David Hagay<br>
+    		<input type="checkbox" name="cc" value="gonen.s@sapiens.com" checked>Gonen Shoham<br>
+			<input type="checkbox" name="cc" value="Danielle.Sapir@sapiens.com" checked>Danielle Sapir<br>
+		
+	    	</td></tr>
+			</table></td>
+		</tr>
+	</table>
+	<br>
+	
+	<INPUT TYPE=SUBMIT value="send the request">
+
+	</FORM>
+
+
+
+</BODY>
+</HTML>

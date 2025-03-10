@@ -1,0 +1,60 @@
+<HTML>
+<head>
+</head>
+<body bgcolor="#ccccbb"">
+	<font size=4 color="blue"><u>CM utilities development request:</u></font>
+	<br>
+	
+	<FORM METHOD=POST name="Form" ACTION="RiHatFtpPackRequest.jsp">
+
+	<table bgcolor="#99aa99" border="1" >
+		<tr bgcolor="#99aa99"><td>Utility</td><td>Note</td><td>Change</td></tr>		
+		<tr bgcolor="#dddddd"><td>cmInstaller</td><td>old installation utility</td>
+				<td>
+					<input name="utility" type="checkbox" value="cmInstaller_full" 		id="utility">full(first time installation)<br>
+					<input name="utility" type="checkbox" value="cmInstaller_upgrade" id="utility">upgrade<br>
+					<input name="utility" type="checkbox" value="cmInstaller_update" 	id="utility">update<br>
+					<input name="utility" type="checkbox" value="cmInstaller_hotfix" 	id="utility">hotfix<br>
+				</td></tr>		
+		<tr bgcolor="#bbbbbb"><td>HAT</td><td>new installation utility</td>
+				<td>
+					<input name="utility" type="checkbox" value="hat_riCrtNewEnvPreReq" 				id="utility">Prerequisite installations(new server)<br>
+					<input name="utility" type="checkbox" value="hat_riCrtNewEnvAll"						id="utility">RI installation<br>
+					<input name="utility" type="checkbox" value="hat_riInstallBI" 							id="utility">BI installations<br>
+					<input name="utility" type="checkbox" value="hat_riInstallCfgWebFull" 			id="utility">CfgWeb installation<br>
+					<input name="utility" type="checkbox" value="hat_riUpgradeLogicAndScripts" 	id="utility">Upgrade logic + scripts<br>
+				</td></tr>		
+		<tr bgcolor="#dddddd"><td>cfgWeb</td><td>customer customization utility</td><td><input name="utility" type="checkbox" value="cmInstaller" id="utility" ></td></tr>		
+		<tr bgcolor="#bbbbbb"><td>cfgMenuWeb</td><td>inLab developers web application</td><td><input name="utility" type="checkbox" value="cmInstaller" id="utility" ></td></tr>		
+		<tr bgcolor="#dddddd"><td>cfgMenu</td><td>inLab developers application<td><input name="utility" type="checkbox" value="cmInstaller" id="utility" ></td></tr>		
+		<tr bgcolor="#bbbbbb"><td>new utility</td><td>??<td><input name="utility" type="checkbox" value="cmInstaller" id="utility" ></td></tr>		
+
+</table>
+
+	<table  cellpadding="10"><tr><td>
+	<table bgcolor="#99aa99" border="1" >
+		<tr bgcolor="#99aa99"><td>for versions</td></tr>		
+		<tr bgcolor="#dddddd"><td>0606<input name="utility" type="checkbox" value="0606" id="utility" ></td></tr>		
+		<tr bgcolor="#dddddd"><td>0607<input name="utility" type="checkbox" value="0607" id="utility" ></td></tr>		
+		<tr bgcolor="#dddddd"><td>0608<input name="utility" type="checkbox" value="0608" id="utility" ></td></tr>		
+		<tr bgcolor="#dddddd"><td>0609<input name="utility" type="checkbox" value="0609" id="utility" ></td></tr>		
+		<tr bgcolor="#dddddd"><td>0700<input name="utility" type="checkbox" value="0700" id="utility" ></td></tr>		
+</table>
+</td><td>
+		Done by:<select name="done_by">
+					<option value="{USER}">{USER}</option>
+    			</select><br><br>	
+</td></tr></table>
+	
+
+<table bgcolor="#99aa99" border="1" style="width:70%">
+ 	<tr><td>Change description (with details)</td></tr>
+		<tr><td><textarea cols="120" rows="15" name="appendToMail"></textarea></td></tr>
+</table>
+<br>
+
+
+<INPUT TYPE=SUBMIT value="send the request">
+</FORM>
+</BODY>
+</HTML>

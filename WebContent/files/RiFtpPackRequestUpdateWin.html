@@ -1,0 +1,176 @@
+<HTML>
+<head>
+</head>
+<body bgcolor="#ccccbb"">
+	
+	<font size=4 color="blue"><u>RI FTP-Pack update request: (WIN)</u></font>
+	<br>
+	<br><font size=2 color="blue">Select the correct option and submit the form</font>
+	<br><br>
+	
+	<FORM METHOD=POST name="Form" ACTION="RiFtpPackRequestUpdateWin.jsp">
+	
+	<table bgcolor="#aaaacc" border="1" style="width:70%">
+		<tr>
+			<td>Version:</td>		
+			<td>Maintenance:</td>		
+			<td>Update:</td>		
+			<td>Done by:</td>		
+			<td>Action:</td>
+		</tr>
+		<tr>
+			<td><select name="riVersions">
+				<option value="0980">0980</option>
+					<option value="0609">0609</option>
+					<option value="0608">0608</option>
+					<option value="0607">0607</option>
+    				<option value="0606">0606</option>
+    				<option value="0603">0603</option>
+     			</select></td>	
+
+			<td><select name="riMaint" >
+    				<option value="00">00</option>
+    				<option value="01">01</option>
+    				<option value="02">02</option>
+    				<option value="03">03</option>
+    				<option value="04">04</option>
+    				<option value="05">05</option>
+    				<option value="06">06</option>
+    				<option value="07">07</option>
+    				<option value="08">08</option>
+    				<option value="09">09</option>
+    				<option value="10">10</option>
+    				<option value="11">11</option>
+    				<option value="12">12</option>
+    				<option value="13">13</option>
+    				<option value="14">14</option>
+    				<option value="15">15</option>
+    				<option value="16">16</option>
+    				<option value="17">17</option>
+    				<option value="18">18</option>
+    				<option value="19">19</option>
+    				<option value="20">20</option>
+     			</select></td>	
+
+			<td><select name="riUpdate" >
+    				<option value="00">00</option>
+    				<option value="01">01</option>
+    				<option value="02">02</option>
+    				<option value="03">03</option>
+    				<option value="04">04</option>
+    				<option value="05">05</option>
+    				<option value="06">06</option>
+    				<option value="07">07</option>
+    				<option value="08">08</option>
+    				<option value="09">09</option>
+    				<option value="10">10</option>
+    				<option value="11">11</option>
+    				<option value="12">12</option>
+    				<option value="13">13</option>
+    				<option value="14">14</option>
+    				<option value="15">15</option>
+    				<option value="16">16</option>
+    				<option value="17">17</option>
+    				<option value="18">18</option>
+    				<option value="19">19</option>
+    				<option value="20">20</option>
+    				<option value="21">21</option>
+    				<option value="22">22</option>
+    				<option value="23">23</option>
+    				<option value="24">24</option>
+    				<option value="25">25</option>
+    				<option value="26">26</option>
+    				<option value="27">27</option>
+    				<option value="28">28</option>
+    				<option value="29">29</option>
+    				<option value="30">30</option>
+     			</select></td>
+     			
+			<td><select name="done_by">
+					<option value="{USER}">{USER}</option>
+    			</select></td>	
+			<td><select name="action">
+    				<option value="Request to pack">Request to pack</option>
+    				<option value="Cancel a request">Cancel a request</option>
+   		
+   				</select></td>	
+			
+		</tr>
+	</table>
+
+	<br>
+		<table  border="1" style="width:70%">
+	   	<tr>
+	   		<td  bgcolor="#EDE275"><font color = "blue">WIN</font></td>
+	  	</tr>
+			<tr>
+    		<td bgcolor="#FFF380">
+	  			<table  style="width:100%" border="1">
+  					<tr>
+  						<td>
+  							Tabs
+  						</td>
+  						<td>
+  							<table>
+  							<tr>
+    						<td>
+    						&nbsp;&nbsp;<input name="cbgroup1" type="checkbox" value="RI Logic Server (Win)" 	 	id="cb1_1" class="cbgroup1" checked onchange= "one(this,'group1_master')">&nbsp;RI Logic Server (Win)<br>
+   							&nbsp;&nbsp;<input name="cbgroup1" type="checkbox" value="RI Scripts (eObjects)" 	 	id="cb1_2" class="cbgroup1" checked onchange= "one(this,'group1_master')">&nbsp;RI Scripts (eObjects)<br>
+   							&nbsp;&nbsp;<input name="cbgroup1" type="checkbox" value="RI Document Converter" 	 	id="cb1_3" class="cbgroup1" checked onchange= "one(this,'group1_master')">&nbsp;RI Document Converter<br>
+   							&nbsp;&nbsp;<input name="cbgroup1" type="checkbox" value="RI Document Templates" 	 	id="cb1_4" class="cbgroup1" checked onchange= "one(this,'group1_master')">&nbsp;RI Document Templates<br>
+								</td>
+   							<td>
+   								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   								</td>
+   							<td>
+   							&nbsp;&nbsp;<input name="cbgroup1" type="checkbox" value="Bi" 										 	id="cb1_5" class="cbgroup1" checked onchange= "one(this,'group1_master')">&nbsp;Bi<br>
+   							&nbsp;&nbsp;<input name="cbgroup1" type="checkbox" value="WebProxy" 							 	id="cb1_6" class="cbgroup1" checked onchange= "one(this,'group1_master')">&nbsp;WebProxy<br>
+   							&nbsp;&nbsp;<input name="cbgroup1" type="checkbox" value="eMerge client update" 	 	id="cb1_7" class="cbgroup1" checked onchange= "one(this,'group1_master')">&nbsp;eMerge client update<br>
+ 								&nbsp;&nbsp;<input name="cbgroup1" type="checkbox" value="CfgWeb" 				 					id="cb1_8" class="cbgroup1" checked onchange= "one(this,'group1_master')">&nbsp;CfgWeb<br>
+    					</td>
+    						</tr>
+    						  						</table>
+    					</td>
+    				</tr>
+						<tr>
+  						<td>
+  							RIFLARE folder
+							</td>
+  						<td>
+ 								&nbsp;&nbsp;<input name="cbgroup2" type="checkbox" value="YES" 				 					id="cb2_1" class="cbgroup2" >&nbsp;pack RIFLARE folder<br>
+							</td>
+     				</tr>
+     				<tr>
+  						<td>
+  							Install from FTP
+							</td>
+  					<td>
+ 							&nbsp;&nbsp;{server-dbid,server-dbid}:<input type="text" id="cb3_1"  name="instFromFtp" size="40">
+						</td>
+     			</tr>
+ 	    	</table>
+     	</tr>
+		</table>
+	
+		<br>
+	
+	
+
+		<table bgcolor="#aaaacc" border="1" style="width:70%">
+	   	<tr>
+	  	<td>Note:</td>
+			<td><textarea cols="90" rows="5" name="appendToMail"></textarea></td>
+	  	</tr>
+		</table>
+		<br>
+	
+	 <INPUT TYPE=SUBMIT value="send the request">
+	
+	
+	</FORM>
+
+
+
+</BODY>
+
+</HTML>
